@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73AA33903AD2EB09CF6838D1 /* libPods-GH3316.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F4BB4D226F1C6EDCECC871 /* libPods-GH3316.a */; };
 		E8F6BD031C93A73B001CC06A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F6BD021C93A73B001CC06A /* main.m */; };
 		E8F6BD061C93A73B001CC06A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F6BD051C93A73B001CC06A /* AppDelegate.m */; };
 		E8F6BD091C93A73B001CC06A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F6BD081C93A73B001CC06A /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AD88EE9B0AC15D7FB2A0E2D /* Pods-GH3316.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GH3316.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GH3316/Pods-GH3316.debug.xcconfig"; sourceTree = "<group>"; };
+		728A5D37772BB952E14C64FA /* Pods-GH3316.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GH3316.release.xcconfig"; path = "Pods/Target Support Files/Pods-GH3316/Pods-GH3316.release.xcconfig"; sourceTree = "<group>"; };
+		79F4BB4D226F1C6EDCECC871 /* libPods-GH3316.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GH3316.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F6BCFE1C93A73B001CC06A /* GH3316.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GH3316.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F6BD021C93A73B001CC06A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8F6BD041C93A73B001CC06A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73AA33903AD2EB09CF6838D1 /* libPods-GH3316.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD6981408B8F916437018965 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AD88EE9B0AC15D7FB2A0E2D /* Pods-GH3316.debug.xcconfig */,
+				728A5D37772BB952E14C64FA /* Pods-GH3316.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1750D45EE73078F976435ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79F4BB4D226F1C6EDCECC871 /* libPods-GH3316.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8F6BCF51C93A73B001CC06A = {
 			isa = PBXGroup;
 			children = (
 				E8F6BD001C93A73B001CC06A /* GH3316 */,
 				E8F6BCFF1C93A73B001CC06A /* Products */,
+				BD6981408B8F916437018965 /* Pods */,
+				D1750D45EE73078F976435ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8F6BD151C93A73B001CC06A /* Build configuration list for PBXNativeTarget "GH3316" */;
 			buildPhases = (
+				81D6C6136602851B286EB055 /* Check Pods Manifest.lock */,
 				E8F6BCFA1C93A73B001CC06A /* Sources */,
 				E8F6BCFB1C93A73B001CC06A /* Frameworks */,
 				E8F6BCFC1C93A73B001CC06A /* Resources */,
+				1BD14B9EF9E4A01DBE9263F6 /* Embed Pods Frameworks */,
+				3E1DF6B0D6AB4EB2601957C0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BD14B9EF9E4A01DBE9263F6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GH3316/Pods-GH3316-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E1DF6B0D6AB4EB2601957C0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GH3316/Pods-GH3316-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81D6C6136602851B286EB055 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8F6BCFA1C93A73B001CC06A /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		E8F6BD161C93A73B001CC06A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD88EE9B0AC15D7FB2A0E2D /* Pods-GH3316.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GH3316/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		E8F6BD171C93A73B001CC06A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 728A5D37772BB952E14C64FA /* Pods-GH3316.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GH3316/Info.plist;
@@ -298,6 +375,7 @@
 				E8F6BD171C93A73B001CC06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
