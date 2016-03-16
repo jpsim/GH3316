@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73AA33903AD2EB09CF6838D1 /* libPods-GH3316.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F4BB4D226F1C6EDCECC871 /* libPods-GH3316.a */; };
+		AF5FE30B2979C6698DD58A5B /* Pods_GH3316.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACDFA8C64EC30CB489DAF30 /* Pods_GH3316.framework */; };
 		E8F6BD031C93A73B001CC06A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F6BD021C93A73B001CC06A /* main.m */; };
 		E8F6BD061C93A73B001CC06A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F6BD051C93A73B001CC06A /* AppDelegate.m */; };
 		E8F6BD091C93A73B001CC06A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F6BD081C93A73B001CC06A /* ViewController.m */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ACDFA8C64EC30CB489DAF30 /* Pods_GH3316.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GH3316.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD88EE9B0AC15D7FB2A0E2D /* Pods-GH3316.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GH3316.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GH3316/Pods-GH3316.debug.xcconfig"; sourceTree = "<group>"; };
 		728A5D37772BB952E14C64FA /* Pods-GH3316.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GH3316.release.xcconfig"; path = "Pods/Target Support Files/Pods-GH3316/Pods-GH3316.release.xcconfig"; sourceTree = "<group>"; };
-		79F4BB4D226F1C6EDCECC871 /* libPods-GH3316.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GH3316.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F6BCFE1C93A73B001CC06A /* GH3316.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GH3316.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F6BD021C93A73B001CC06A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8F6BD041C93A73B001CC06A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AA33903AD2EB09CF6838D1 /* libPods-GH3316.a in Frameworks */,
+				AF5FE30B2979C6698DD58A5B /* Pods_GH3316.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		D1750D45EE73078F976435ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				79F4BB4D226F1C6EDCECC871 /* libPods-GH3316.a */,
+				1ACDFA8C64EC30CB489DAF30 /* Pods_GH3316.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
